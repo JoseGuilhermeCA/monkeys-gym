@@ -9,9 +9,14 @@ background-repeat: no-repeat;
 header{
   background-color: white;
   width: 100vw;
+  opacity: 60%;
   
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+}
 .imagem{
     
     width: 50px;
@@ -52,7 +57,34 @@ h1{
 
 p{
     font-family: 'Inter', sans-serif;
+    font-weight: 800;
     color: white;
     font-size: 48px;
     margin-left: 100px;
 }
+
+
+
+#texto_home{
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 380px;
+    color: white;
+    text-align:justify ;
+}
+
+#btn_1{
+    
+    margin-left: 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    width: 150px;
+    height: 100px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    
+}   
