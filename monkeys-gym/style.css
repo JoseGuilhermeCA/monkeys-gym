@@ -1,11 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
-body{ 
+.home{ 
+margin-top: 60px;
+height: 100vh;
 background-image: url('utilities/images/monkeyBg.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 }
+
+.servicos{
+    background-image: url('utilities/images/cbumMG.jpg'), url('utilities/images/MirandaMG.jpg');
+    background-size: 50%,50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 1px , right ;
+    display: flex;
+    height: 100vh;
+    
+}
+
+.cards{
+    display: flex;
+    gap: 100px;
+    margin-top: 30vh;
+    margin-left: 380px;
+}
+
+.cardText{
+    color: white;
+    font-size: 20px;
+    
+}
+.mensal{
+   
+    width: 300px;
+    height: 520px;
+    background-color: gray;
+    opacity: 30%;
+    border-radius: 30px;
+}
+
+.trimestral{
+   
+    width: 300px;
+    height: 520px;
+    background-color: gray;
+    opacity: 30%;
+    border-radius: 30px;
+}
+
+.semestral{
+   
+    width: 300px;
+    height: 520px;
+    background-color: gray;
+    opacity: 30%;
+    border-radius: 30px;
+}
+    
+
+
+
 header{
   background-color: white;
   width: 100vw;
@@ -14,11 +74,15 @@ header{
 }
 
 nav{
+    width: 100vw;
+    background-color:  white ;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
 }
 .imagem{
-    
+    padding: 8px 8px 8px 8px;
     width: 50px;
     height: 50px;
 }
@@ -26,6 +90,10 @@ nav{
 .imagem img{
     width: 100%;
     height: 100%;
+}
+
+#menu{
+    height: 60px;
 }
 
 #menu ul {
@@ -70,7 +138,6 @@ p{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     font-size: 20px;
-    margin-top: 380px;
     color: white;
     text-align:justify ;
 }
