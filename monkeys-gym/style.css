@@ -1,9 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
+@keyframes transition{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
-    border: 0;
+    box-sizing: bor;
+}
+
+body{
+    animation: transition 0.75s;
 }
 
 .home{ 
@@ -12,9 +27,10 @@ height: 100vh;
 background-image: url('utilities/images/monkeyBg.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+
 }
 
-.servicos{
+#servicos{
     background-image: url('utilities/images/cbumMG.jpg'), url('utilities/images/MirandaMG.jpg');
     background-size: 50%,50%;
     background-repeat: no-repeat, no-repeat;
@@ -29,37 +45,55 @@ background-repeat: no-repeat;
     gap: 100px;
     margin-top: 30vh;
     margin-left: 380px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 3s;
+    transition-delay: 1s;
 }
 
 .cardText{
     color: white;
     font-size: 20px;
-    
+    justify-content: space-evenly;
+    margin: 10px 10px 10px 50px;
 }
+.cardInside{
+    background-color: red;
+    margin-top: 30vh;
+    margin-left: 380px;
+}
+
+.cardTextInside{
+    font-size: 18px;
+    position: absolute;
+    margin: 10px 10px 10px 50px;
+    color: rgb(255, 255, 255);
+    opacity: 90%;
+}
+    
 .mensal{
-   
     width: 300px;
     height: 520px;
     background-color: gray;
-    opacity: 30%;
+    opacity: 80%;
     border-radius: 30px;
 }
+
+
 
 .trimestral{
    
     width: 300px;
     height: 520px;
     background-color: gray;
-    opacity: 30%;
+    opacity: 80%;
     border-radius: 30px;
 }
 
 .semestral{
-   
     width: 300px;
     height: 520px;
     background-color: gray;
-    opacity: 30%;
+    opacity: 80%;
     border-radius: 30px;
 }
     
@@ -97,7 +131,6 @@ nav{
 }
 
 #menu ul {
-    
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: flex-end;
@@ -131,20 +164,26 @@ p{
     margin-left: 100px;
 }
 
+#titleM{
+    padding: 50px 10px;  
+}
 
-
-#texto_home{
-    
+.texto_home{
     font-family: 'Inter', sans-serif;
-    font-weight: 800;
     font-size: 20px;
-    color: white;
-    text-align:justify ;
+    color: #ffff;
+    position: absolute;
+    top: 50%;
+    text-shadow: blur-radius;
+    text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
 }
 
 #btn_1{
-    
-    margin-left: 100px;
+    margin: 600px 0px 20px 100px;
     font-family: 'Inter', sans-serif;
     font-weight: 800;
     width: 150px;
@@ -153,5 +192,10 @@ p{
     background-color: black;
     color: white;
     border-radius: 20px;
-    
-}   
+}
+#btn_1:hover{
+   color: gray;
+}
+#btn_1::before{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+ }
