@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
-@keyframes transition{
-    from{
-        opacity: 0;
-        transform: rotateX(-10deg);
+@keyframes transition {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
     }
-    to{
-        opacity: 1;
-        transform: rotateX(0);
+    to {
+      opacity: 1;
+      transform: rotateX(0);
     }
 }
+
 
 *{
     padding: 0;
@@ -18,7 +19,7 @@
 }
 
 body{
-    animation: transition 0.75s;
+    animation: transition 0.75s ease-in-out 1;
 }
 
 .home{ 
@@ -44,11 +45,24 @@ background-repeat: no-repeat;
     display: flex;
     gap: 100px;
     margin-top: 30vh;
-    margin-left: 380px;
-    transition-timing-function: ease-in-out;
-    transition-duration: 3s;
-    transition-delay: 1s;
+    margin-left: 236px;
+
+
 }
+.mensal {
+	-webkit-animation: flip-scale-up-hor 0.5s linear both;
+	        animation: flip-scale-up-hor 0.5s linear both;
+}
+
+.mensal:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    opacity: 100;
+    
+}
+
+
+
 
 .cardText{
     color: white;
@@ -56,28 +70,53 @@ background-repeat: no-repeat;
     justify-content: space-evenly;
     margin: 10px 10px 10px 50px;
 }
-.cardInside{
-    background-color: red;
-    margin-top: 30vh;
-    margin-left: 380px;
+#tituloCard{
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color:white;
+    font-weight: bold;
+    margin: 60px 0px 0px;
 }
 
 .cardTextInside{
     font-size: 18px;
     position: absolute;
-    margin: 10px 10px 10px 50px;
+    margin: 10px 10px 10px ;
     color: rgb(255, 255, 255);
     opacity: 90%;
 }
     
 .mensal{
+    
     width: 300px;
     height: 520px;
     background-color: gray;
     opacity: 80%;
     border-radius: 30px;
+    -webkit-animation: flip-scale-up-hor 0.5s linear both;
+	        animation: flip-scale-up-hor 0.5s linear both;
 }
 
+.aaa{
+    padding: 40px;
+}
+
+.cardPrecos{
+    padding-top: 200px;
+    padding-left: 50px  ;
+}
 
 
 .trimestral{
