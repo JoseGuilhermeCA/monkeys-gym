@@ -70,7 +70,7 @@
             <p class="cardTextInside" ><br><br> Espaço de musculação<br><br>
               Espaço de aeróbio<br><br>
               Vestiario <br><br>
-              Pilates
+              Montagem de treino
             </p>
           </div>
           <div class="cardPrecos">
@@ -99,23 +99,32 @@
       </div>
 </section>
   
-<section id="secao-orcamento">
+<section id="secao-orcamento" class="ideal-plan-section">
   <form action="#">
       <h3>Seu Plano ideal</h3>
-      <label for="qtde">Vai a academia x vezes</label>
-      <input type="number" id="qtde" min="1" value="1">
-      <label for="js">Possui veiculo?</label>
-      <input type="checkbox" id="js">
-      <label for="layout">Precisa de treino?</label>
-      <div class="input-group">
-          <input type="radio" id="layout_sim" name="layout">
-          <label for="layout_sim">sim, preciso</label>
-          <input type="radio" id="layout_nao" name="layout">
-          <label for="layout_nao">não, já tenho</label>
+      <div class="secao-orcamento-rows quantity">
+        <label for="qtde">Vai a academia x vezes</label>
+        <input type="number" id="qtde" min="1" value="1" class="qtd-input">
       </div>
-      <label for="prazo">Seu plano ideial é: </label>
-      <input type="range" id="prazo" min="1" max="10">
-      <output>R$ 0,00</output>
+      <div class="secao-orcamento-rows">
+        <p>Possui veiculo?</p>
+        <div>
+          <input type="checkbox" id="Veiculo">
+          <label for="js">Sim</label>
+        </div>  
+      </div>
+      <div class="secao-orcamento-rows">
+        <label for="layout">Precisa de treino?</label>
+        <div class="input-group">
+            <input type="radio" id="layout_sim" name="layout">
+            <label for="layout_sim">sim, preciso</label>
+            <input type="radio" id="layout_nao" name="layout">
+            <label for="layout_nao">não, já tenho</label>
+        </div>
+      </div>
+     
+
+      <output class="final-price">PLANO MENSAL</output>
   </form>
 </section>
 
