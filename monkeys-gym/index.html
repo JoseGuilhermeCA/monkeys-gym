@@ -2,130 +2,141 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monkeys Gym</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="navbarSection header1 hidden" id="navbar">
     <div class="navbarContent">
-      <nav id="menu">
-    
-        <div class="imagem"> 
-            <img src="../monkeys-gym/utilities/images/logo.png" alt="">
-        </div>
-    
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="#servicos">SERVIÇOS</a></li>
-            <li><a href="#">CONTATO</a></li>
-          </ul>
-        </nav>
+      <div class="nav-imagem"> 
+        <img src="../monkeys-gym/utilities/images/logo.png" alt="">
+      </div>
+  
+      <ul class="navbar-links">
+        <li><a class="nav-links" href="index.html">INICIO</a></li>
+        <li><a class="nav-links" href="#servicos">SERVIÇOS</a></li>
+        <li><a class="nav-links" href="#">CONTATO</a></li>
+      </ul>
     </div>   
-  </header>  
+  </header> 
+  
+  <header class="navbarSection header2">
+    <div class="hamburguerSection">
+      <div class="hamburguerIcon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </header>
  
   <section class="home">
-    <div class="textoHome">
-      <p class="texto_home"> Oferecemos planos de treinamentos do iniciante ao avançado, 
-        <br> para musculação de primeira linha, 
-        <br>Aparelhos para Cardio e Vestiario equipado.</p>
-    </div>
-    <button id="btn_1"> FAÇA SUA INSCRIÇÃO</button>
+    <div class="homeSection">
+      <p class="textTitle">MONKEY'S GYM</p>
+      <div class="textConteiner">
+        <p class="textHome"> Oferecemos planos de treinamentos do iniciante ao avançado, 
+          <br> para musculação de primeira linha, 
+          <br>Aparelhos para Cardio e Vestiario equipado.
+        </p>
 
-    <p id="titleM">MONKEY'S GYM</p>
+        <button class="textButton"> FAÇA SUA INSCRIÇÃO</button>
+      </div>
+    </div>
   </section>
 
   <section id="servicos">
     <div class="cards">
-     
       <div class="mensal">
-        
-        <div class="aaa">
+        <h1 class="tituloCard"> PLANO MENSAL</h1>
+        <div class="cardContainer">
           <div class="cardInfo">
-            <h1 id="tituloCard"> PLANO MENSAL</h1>
-            <p class="cardTextInside" > <br><br>Espaço de musculação<br><br>
-              Espaço de aeróbio<br><br>
+            <p class="cardTextInside" >
+              Espaço de musculação<br>
+              Espaço de aeróbio<br>
               Vestiario 
             </p>
           </div>
   
           <div class="cardPrecos">
-            
             <div class="circulo">
               R$120
             </div>
           </div>
-          
-
-        </div>
-        
+        </div> 
       </div>
 
       <div class="mensal">
-        
-        <div class="aaa">
+        <h1 class="tituloCard"> PLANO MENSAL</h1>
+        <div class="cardContainer">
           <div class="cardInfo">
-            <h1 id="tituloCard" > PLANO TRIMESTRAL</h1>
-            <p class="cardTextInside" ><br><br> Espaço de musculação<br><br>
-              Espaço de aeróbio<br><br>
-              Vestiario <br><br>
+            <p class="cardTextInside" >
+              Espaço de musculação<br>
+              Espaço de aeróbio<br>
+              Vestiario<br>
               Montagem de treino
             </p>
           </div>
+  
           <div class="cardPrecos">
             <div class="circulo">
               R$200
             </div>
           </div>
-        </div>      
+        </div> 
       </div>
       <div class="mensal">
-        <div class="aaa">
+        <h1 class="tituloCard"> PLANO MENSAL</h1>
+        <div class="cardContainer">
           <div class="cardInfo">
-            <h1 id="tituloCard"> PLANO SEMESTRAL</h1>
-            <p class="cardTextInside" > <br><br>Espaço de musculação<br><br>
-              Espaço de aeróbio<br><br>
-              Vestiario <br><br>
-              Estacionamento Gratuito
+            <p class="cardTextInside" >
+              Espaço de musculação<br>
+              Espaço de aeróbio<br>
+              Vestiario<br>
+              Montagem de treino<br>
+              Estacionamento Gratuito 
             </p>
           </div>
+  
           <div class="cardPrecos">
             <div class="circulo">
               R$300
             </div>
           </div>
-        </div>
+        </div> 
       </div>
 </section>
   
 <section id="secao-orcamento" class="ideal-plan-section">
-  <form action="#">
-      <h3>Seu Plano ideal</h3>
-      <div class="secao-orcamento-rows quantity">
-        <label for="qtde">Vai a academia x vezes</label>
-        <input type="number" id="qtde" min="1" value="1" class="qtd-input">
-      </div>
-      <div class="secao-orcamento-rows">
-        <p>Possui veiculo?</p>
-        <div>
-          <input type="checkbox" id="Veiculo">
-          <label for="js">Sim</label>
-        </div>  
-      </div>
-      <div class="secao-orcamento-rows">
-        <label for="layout">Precisa de treino?</label>
-        <div class="input-group">
-            <input type="radio" id="layout_sim" name="layout">
-            <label for="layout_sim">sim, preciso</label>
-            <input type="radio" id="layout_nao" name="layout">
-            <label for="layout_nao">não, já tenho</label>
+  <div class="budgetSection">
+    <h3 class="budgetTitle">Seu Plano ideal</h3>
+    <form action="#">
+        
+        <div class="secao-orcamento-rows quantity">
+          <label for="qtde">Vai a academia x vezes</label>
+          <input type="number" id="qtde" min="1" value="1" class="qtd-input">
         </div>
-      </div>
-     
+        <div class="secao-orcamento-rows">
+          <p>Possui veiculo?</p>
+          <div>
+            <input type="checkbox" id="Veiculo">
+            <label for="js">Sim</label>
+          </div>  
+        </div>
+        <div class="secao-orcamento-rows">
+          <label for="layout">Precisa de treino?</label>
+          <div class="input-group">
+              <input type="radio" id="layout_sim" name="layout">
+              <label for="layout_sim">sim, preciso</label>
+              <input type="radio" id="layout_nao" name="layout">
+              <label for="layout_nao">não, já tenho</label>
+          </div>
+        </div>
+      
 
-      <output class="final-price">PLANO MENSAL</output>
-  </form>
+        <output class="final-price">PLANO MENSAL</output>
+    </form>
+  </div>
 </section>
 
 </body>
